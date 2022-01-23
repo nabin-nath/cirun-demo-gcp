@@ -1,0 +1,20 @@
+name: GCP CPU
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: [self-hosted, gcp-cpu]
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Get Hostname
+      run: |
+        hostname
+    - name: Get system Information
+      run: |
+        uname -a
+    - name: Get Architecture
+      run: |
+        dpkg --print-architecture
