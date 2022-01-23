@@ -1,0 +1,10 @@
+runners:
+  - name: gcp-cpu-runner
+    cloud: gcp
+    instance_type: e2-micro
+    machine_image: ubuntu-minimal-2004-lts
+    preemptible: false
+    workflow: .github/workflows/gcp.yml
+    count: 1
+    labels:
+      - gcp-cpu
