@@ -1,2 +1,2 @@
 # Cirun on Google Cloud Platform
-Self hosted github actions on GCP using https://cirun.io
+Self hosted github actions on Google Cloud Platform using https://cirun.io
